@@ -25,3 +25,7 @@ cd library-issue/app
 yarn install
 yarn dev
 ```
+
+## Worth mentioning:
+
+The original setup is heavily based on https://github.com/TimMikeladze/tsup-react-package-starter

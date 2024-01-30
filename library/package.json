@@ -1,52 +1,51 @@
 {
-  "name": "library",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsup",
-    "storybook:build": "storybook build",
-    "storybook": "storybook dev -p 6006"
-  },
-  "types": "./dist/index.d.ts",
-  "exports": {
-    "./dist/*": "./dist/*",
-    ".": {
-      "import": "./dist/index.mjs"
+    "name": "library",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "tsup",
+        "storybook:build": "storybook build",
+        "storybook": "storybook dev -p 6006"
+    },
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "./dist/*": "./dist/*",
+        ".": {
+            "import": "./dist/index.mjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [],
+    "author": "Manuel Bieh",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "7.23.7",
+        "@babel/preset-env": "7.23.8",
+        "@babel/preset-react": "7.23.3",
+        "@babel/preset-typescript": "7.23.3",
+        "@storybook/blocks": "7.6.10",
+        "@storybook/react": "7.6.10",
+        "@storybook/react-webpack5": "7.6.10",
+        "@types/react": "^18.2.48",
+        "@types/react-dom": "^18.2.18",
+        "prettier": "^3.2.4",
+        "storybook": "7.6.10",
+        "string-width": "^7.1.0",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "resolutions": {
+        "glob-parent": ">=5.1.2",
+        "parse-url": ">=8.1.0",
+        "semver": ">=7.5.2",
+        "trim": ">=0.0.3",
+        "trim-newlines": ">=3.0.1",
+        "yaml": ">=2.2.2"
     }
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [],
-  "author": "Manuel Bieh",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "7.23.7",
-    "@babel/preset-env": "7.23.8",
-    "@babel/preset-react": "7.23.3",
-    "@babel/preset-typescript": "7.23.3",
-    "@storybook/blocks": "7.6.10",
-    "@storybook/react": "7.6.10",
-    "@storybook/react-webpack5": "7.6.10",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "prettier": "^3.2.4",
-    "storybook": "7.6.10",
-    "string-width": "^7.1.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "resolutions": {
-    "glob-parent": ">=5.1.2",
-    "parse-url": ">=8.1.0",
-    "semver": ">=7.5.2",
-    "trim": ">=0.0.3",
-    "trim-newlines": ">=3.0.1",
-    "yaml": ">=2.2.2"
-  }
 }
